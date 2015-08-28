@@ -1,0 +1,23 @@
+neocomplete
+===========
+[![Stories in Ready](http://badge.waffle.io/Shougo/neocomplete.vim.png)](http://waffle.io/Shougo/neocomplete.vim)
+
+neocomplete is the abbreviation of "neo-completion with cache". It provides
+keyword completion system by maintaining a cache of keywords in the current
+buffer. neocomplete can be customized easily and has many more features than
+Vim's built-in completion.
+
+## Installation
+
+**Note:** neocomplete requires Vim 7.3.885+ with Lua enabled.
+See [requirements](#requirements) if you aren't sure whether you have this.
+
+1. Extract the files and put them in your Vim directory
+   (usually `~/.vim/` or `Program Files/Vim/vimfiles` on Windows).
+2. Execute the `:NeoCompleteEnable` command or set `let g:neocomplete#enable_at_startup = 1`
+   in your `.vimrc` (**not** in `.gvimrc` or `_gvimrc`!)
+
+## Requirements
+
+neocomplete requires Vim 7.3.885+ compiled with [if\_lua](http://vimdoc.sourceforge.net/htmldoc/if_lua.html).
+If `:echo has("lua")` returns `1`, then you're done; otherwise, see below.
